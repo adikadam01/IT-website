@@ -587,19 +587,12 @@ img {
 }
 
 .flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
 }
 
-.flex2 {
-  display: flex;
-  justify-content: space-evenly;
-}
 
-.flex3 {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 /* ---------------------------------------------------------------------------------placemnet--------------------------------------------------------------------- */
 
@@ -1355,6 +1348,12 @@ img {
   .line p {
     margin-top: 15%;
     font-size: 1.7rem;
+  }
+
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
   }
 
   #alumini  h2{
