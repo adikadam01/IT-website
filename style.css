@@ -1234,3 +1234,24 @@ img {
   background-color: transparent;
   filter: saturate(100%);
 }
+
+
+@media screen and (max-width:1600px) {
+  a{
+    font-size: 1.5rem;
+  }
+  .move{
+    margin-top: 12%;
+  }
+  .line p{
+    margin-top: 10%;
+    font-size: 2rem;
+  }
+  .para-box p {
+    margin-top: 7%;
+    font-size: 1.7rem;
+  }
+  .iframe{
+    right: 5%;
+  }
+}
