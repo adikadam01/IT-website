@@ -1352,11 +1352,27 @@ img {
 
   .flex {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-evenly;
   }
 
   #alumini  h2{
     margin-left: 10%;
+  }
+
+
+  .slideshow-container{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .iframe{
+    margin: auto;
+    position: static;
+  }
+
+  .inthis{
+    width: 65%;
+    margin: auto;
   }
 }
