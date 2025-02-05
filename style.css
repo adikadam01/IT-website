@@ -1490,7 +1490,7 @@ img {
 
 @media (max-width:351px) {
   #home{
-    height: 80vh;
+    height: 65vh;
     position: relative;
   }
   #home .bring{
