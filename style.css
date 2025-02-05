@@ -643,7 +643,7 @@ img {
 
 }
 
-.ntf{
+.ntf {
   margin-top: 10%;
   margin-left: 5%;
 }
@@ -1303,7 +1303,7 @@ img {
 }
 
 
-.shift{
+.shift {
   display: none;
   margin-top: 10%;
   text-align: center;
@@ -1318,7 +1318,20 @@ img {
 }
 
 
-
+.disc {
+  color: #7dcbe7;
+  font-family: myfont;
+  display: none;
+  font-size: 48px;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
 
 .hamburger {
   display: none;
@@ -1399,18 +1412,19 @@ img {
   }
 }
 
-@media (max-width:770px){
-  .shift{
+@media (max-width:770px) {
+  .shift {
     display: block;
   }
 }
 
 @media (max-width:760px) {
-  .wrap-it{
+  .wrap-it {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  #alumini{
+
+  #alumini {
     height: auto;
     border: none;
     margin-bottom: 10%;
@@ -1418,7 +1432,7 @@ img {
 }
 
 @media (max-width:600px) {
-  #staff{
+  #staff {
     height: auto;
     margin-bottom: 10%;
   }
@@ -1430,92 +1444,117 @@ img {
 }
 
 @media (max-width:560px) {
-  .wrap-it{
+  .wrap-it {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  #alumini{
+
+  #alumini {
     height: auto;
     border: none;
     margin-bottom: 10%;
   }
-  .ntf{
+
+  .ntf {
     margin: auto;
     margin-top: 10%;
     width: 80%;
   }
-  .shift{
+
+  .shift {
     display: block;
   }
 }
 
 @media (max-width:430px) {
-  #about h1{
+  #about h1 {
     font-size: 4.5rem;
   }
-  #infrastructure h1{
+
+  #infrastructure h1 {
     font-size: 4.5rem;
   }
-  #staff h1{
+
+  #staff h1 {
     font-size: 4.5rem;
   }
-  #placement h1{
+
+  #placement h1 {
     font-size: 4.5rem;
   }
-  #alumini h1{
+
+  #alumini h1 {
     font-size: 4.5rem;
   }
-  #codelite h1{
+
+  #codelite h1 {
     font-size: 4.5rem;
   }
-  #serendipity h1{
+
+  #serendipity h1 {
     font-size: 4.5rem;
   }
-  #about{
+
+  #about {
     height: auto;
     margin-bottom: 10%;
   }
-  .para1{
+
+  .para1 {
     height: 75vh;
   }
-  .line p{
+
+  .line p {
     font-size: 1.5rem;
     margin-bottom: 10%;
   }
-  .para-box p{
+
+  .para-box p {
     font-size: 1.5rem;
   }
 }
 
 
 @media (max-width:351px) {
-  #home{
+  #home {
     height: 80vh;
     position: relative;
   }
-  #home .bring{
+
+  #home .bring {
     width: 315px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #home p{
+
+  #home p {
     font-size: 2rem;
   }
-  .marq{
+
+  .disc {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .marq {
     display: none;
   }
-  .line p{
+
+  .line p {
     font-size: 1.3rem;
   }
-  .para-box p{
+
+  .para-box p {
     font-size: 1.3rem;
   }
-  #codelite h4{
+
+  #codelite h4 {
     margin-bottom: 10%;
   }
-  iframe{
+
+  iframe {
     height: auto;
     width: 315px;
   }

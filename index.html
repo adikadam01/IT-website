@@ -80,6 +80,9 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CodeX&nbsp;&nbsp;Club
             </marquee>
         </div>
+        <div class="disc">
+            <span id="text"></span>
+        </div>
         <!-- <div class="spinner"></div> -->
     </div>
 
@@ -694,6 +697,40 @@
                     dots[slideIndex - 1].className += " active";
                     setTimeout(showSlides, 2000); // Change image every 2 seconds
                 }
+
+                const words = ["ITSA", "CodeX"];
+                let currentWordIndex = 0;
+                let currentLetterIndex = 0;
+                let isTyping = true;
+
+                function type() {
+                    const textElement = document.getElementById("text");
+
+                    if (isTyping) {
+                        if (currentLetterIndex < words[currentWordIndex].length) {
+                            textElement.textContent += words[currentWordIndex][currentLetterIndex];
+                            currentLetterIndex++;
+                            setTimeout(type, 100); // Adjust typing speed here
+                        } else {
+                            isTyping = false; // Switch to erasing mode
+                            setTimeout(type, 1000); // Pause before erasing
+                        }
+                    } else {
+                        if (currentLetterIndex > 0) {
+                            textElement.textContent = textElement.textContent.slice(0, -1);
+                            currentLetterIndex--;
+                            setTimeout(type, 100); // Adjust erasing speed here
+                        } else {
+                            isTyping = true; // Switch back to typing mode
+                            currentWordIndex = (currentWordIndex + 1) % words.length; // Move to the next word
+                            setTimeout(type, 500); // Pause before typing next word
+                        }
+                    }
+                }
+
+                // Start the animation
+                type();
+
             </script>
         </div>
 
