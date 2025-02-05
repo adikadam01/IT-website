@@ -1384,3 +1384,27 @@ img {
     margin: auto;
   }
 }
+
+@media (max-width:760px) {
+  .wrap-it{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:560px) {
+  .wrap-it{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #alumini{
+    height: auto;
+    border: none;
+    margin-bottom: 10%;
+  }
+  .ntf{
+    margin: auto;
+    margin-top: 10%;
+    width: 80%;
+  }
+}
