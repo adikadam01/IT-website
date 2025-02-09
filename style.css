@@ -1524,7 +1524,7 @@ img {
   #home .bring {
     width: 315px;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 45%;
     transform: translate(-45%, -45%);
   }
