@@ -1542,6 +1542,42 @@ img {
     display: none;
   }
 
+  #about h1 {
+    font-size: 3.5rem;
+  }
+
+  #infrastructure h1 {
+    font-size: 3.5rem;
+  }
+
+  #placement h1 {
+    font-size: 3.5rem;
+  }
+
+  #alumini h1 {
+    font-size: 3.5rem;
+  }
+
+  #events h1 {
+    font-size: 4rem;
+  }
+
+  #codelite h1 {
+    font-size: 3.5rem;
+  }
+
+  #serendipity h1 {
+    font-size: 3.5rem;
+  }
+
+  .head3 {
+    font-size: 1.7rem;
+  }
+
+  .head3 {
+    font-size: 1.5rem;
+  }
+
   .line p {
     font-size: 1.3rem;
   }
