@@ -1515,7 +1515,7 @@ img {
 }
 
 
-@media (max-width:351px) {
+@media (max-width:361px) {
   #home {
     height: 80vh;
     position: relative;
